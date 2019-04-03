@@ -1,14 +1,10 @@
 const router = require('express').Router()
 const userController = require('../controllers/user')
 
-router.get('/star', userController.getRepoStar)//list repo star
-router.post('/', userController.createRepo) //create repo ok
-router.delete('/deleteStar/:owner/:repo', userController.deleteStar)//delete star ok
-router.get('/searchUserRepo/:user', userController.searchRepo) //search repo by username
-
-//release 2
+router.get('/star', userController.getRepoStar)
 router.get('/star/:nameRepo', userController.searchRepoStar)
-
-
+router.post('/', userController.createRepo) 
+router.delete('/deleteStar/:owner/:repo', userController.deleteStar)
+router.get('/searchUserRepo/:user', userController.searchRepo) 
 
 module.exports= router

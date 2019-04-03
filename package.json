@@ -13,12 +13,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "start": "node app.js",
   "bugs": {
     "url": "https://github.com/prasetiodc/hacktivgit/issues"
   },
   "homepage": "https://github.com/prasetiodc/hacktivgit#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "cors": "^2.8.5",
     "dotenv": "^7.0.0",
     "express": "^4.16.4"
   }
