@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id" content="803547728043-hmlld0lt0o6c8c1iujq6nakpeputrhe3.apps.googleusercontent.com">
+    <title>HacktivGit</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                HacktivGit
+            </a>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <a href="#" onclick="signOut();">Sign out</a>
+    
+        </nav>
+    <div class="container-fluid">
+        <!-- Content here -->
+        <div class="row" >
+            <div class="col-md-2 row1">
+                <h6 id="heading">List User</h6>
+                <ul class="list-group">
+                        <li class="list-group-item list-group-item-action" onclick='listDataUser("prasetiodc")'>prasetiodc</li>
+                        <li class="list-group-item list-group-item-action" onclick='listDataUser("hindyapr")'>hindyapr</li>
+                        <li class="list-group-item list-group-item-action" onclick='listDataUser("classic-fox-2019")'>classic-fox-2019</li>
+                      </ul>
+            </div>
+            <div class="col-md-4 row1">
+                <div id='search'>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+                <div>
+                    REPO LIST
+                    <ul class="list-group list-group-flush" id='list'>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 row1" style="background: #21e40f; color: white">
+                    <h1>Selamat datang di HacktivGit</h1>
+                    <div id="column-right">
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js">
+    </script>
+</body>
+</html>
